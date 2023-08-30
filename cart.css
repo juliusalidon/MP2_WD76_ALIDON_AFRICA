@@ -34,3 +34,27 @@ p{
 h5{
     color: antiquewhite;
 }
+.navbar {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.navbar ul {
+    font-family: sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 80px;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(247, 243, 221);
+    font-weight: bolder;
+    font-size: 18px;
+}
