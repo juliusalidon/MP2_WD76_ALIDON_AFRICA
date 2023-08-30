@@ -12,12 +12,16 @@
     <div class="logo sticky-top">
         <a href="index.html"><img src="img/242917100_384718043277169_7381560119987879574_n.jpg" id="logo" alt=""></a><hr>
     </div>
+    <div class="container iconic">
+        <a href="cart.html"><i class="fa-solid fa-cart-arrow-down fa-beat fa-2xl" style="color: #ff5353;"></i></a>
+    </div>
     <br> <br>
     <h3>PREMIUM</h3>
+    
     <br>
     <div class="container">
         <div class="row g-3">
-            <div class="col-2">
+            <div class="col-4">
                <div class="card w-100 h-100"> 
                     <div class="card-header">
                         <h5>Caramel</h5><p style="font-weight: bold;">12 pcs</p><p>Price: 199</p>    
@@ -26,11 +30,12 @@
                         <img src="img/caramel12.jpg" class="w-100 h-100" alt="">
                     </div>
                     <div class="card-footer">
-                        <button class="btn" onclick="addCart('Pancit Canton Macau', 199, 'img/canton.png')">Add to Cart</button>
+                        <button class="btn" id="myBtn">Order</button>
+                        <!-- <button class="btn" onclick="addCart('Pancit Canton Macau', 199, 'img/canton.png')">Add to Cart</button> -->
                     </div>
                 </div> 
             </div>
-            <div class="col-2">
+            <div class="col-4">
                 <div class="card w-100 h-100">
                     <div class="card-header">
                         <h5>Caramel</h5><p style="font-weight: bold;">6 pcs</p><p>Price: 199</p>  
@@ -39,11 +44,12 @@
                         <img src="img/caramel6.jpg" class="w-100 h-100" alt="">
                     </div>
                     <div class="card-footer">
-                        <button class="btn" onclick="addCart('Pancit Bihon Guisado', 199, 'img/bihon.png')">Add to Cart</button>
+                        <button class="btn" id="myBtn2">Order</button>
+                        <!-- <button class="btn" onclick="addCart('Pancit Bihon Guisado', 199, 'img/bihon.png')">Add to Cart</button> -->
                     </div>
                 </div>        
             </div>
-            <div class="col-2">
+            <div class="col-4">
                 <div class="card w-100 h-100">
                     <div class="card-header">
                         <h5>Chocolate</h5><p style="font-weight: bold;">12 pcs</p><p>Price: 199</p>  
@@ -52,49 +58,8 @@
                         <img src="img/2.jpg" class="w-100 h-100" alt="">
                     </div>
                     <div class="card-footer">
-                        <button class="btn" onclick="addCart('Pancit Bihon Guisado', 199, 'img/bihon.png')">Add to Cart</button>
-                        <!-- <a href="#" class="btn btn-warning">Add to Cart</a> -->
-                    </div>
-                </div>        
-            </div>
-            <div class="col-2">
-                <div class="card w-100 h-100">
-                    <div class="card-header">
-                        <h5>Chocolate</h5><p style="font-weight: bold;">6 pcs</p><p>Price: 199</p>  
-                    </div>
-                    <div class="card-body">
-                        <img src="img/choco6.jpg" class="w-100 h-100" alt="">
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn" onclick="addCart('Pancit Bihon Guisado', 199, 'img/bihon.png')">Add to Cart</button>
-                        <!-- <a href="#" class="btn btn-warning">Add to Cart</a> -->
-                    </div>
-                </div>        
-            </div>
-            <div class="col-2">
-                <div class="card w-100 h-100">
-                    <div class="card-header">
-                        <h5>Sugar Coated</h5><p style="font-weight: bold;">12 pcs</p><p>Price: 199</p>  
-                    </div>
-                    <div class="card-body">
-                        <img src="img/sugar12.jpg" class="w-100 h-100" alt="">
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn" onclick="addCart('Pancit Bihon Guisado', 199, 'img/bihon.png')">Add to Cart</button>
-                        <!-- <a href="#" class="btn btn-warning">Add to Cart</a> -->
-                    </div>
-                </div>        
-            </div>
-            <div class="col-2">
-                <div class="card w-100 h-100">
-                    <div class="card-header">
-                        <h5>Sugar Coated</h5><p style="font-weight: bold;">6 pcs</p><p>Price: 199</p>  
-                    </div>
-                    <div class="card-body">
-                        <img src="img/sugar6.jpg" class="w-100 h-100" alt="">
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn" onclick="addCart('Pancit Bihon Guisado', 199, 'img/bihon.png')">Add to Cart</button>
+                        <button class="btn" id="myBtn3">Order</button>
+                        <!-- <button class="btn" onclick="addCart('Pancit Bihon Guisado', 199, 'img/bihon.png')">Add to Cart</button> -->
                         <!-- <a href="#" class="btn btn-warning">Add to Cart</a> -->
                     </div>
                 </div>        
@@ -221,6 +186,34 @@
             </div>        
         </div>
     </div>
+    <div id="myModal" class="card modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="card-header modal-header">
+            <h2>Select an option</h2>
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+            
+                <label>
+                    <input type="radio" name="caramelOption" value="12pcs" checked> 12 pcs - $199
+                </label>
+                <label>
+                    <input type="radio" name="caramelOption" value="6pcs"> 6 pcs - $109
+                </label>
+                <h6>Select Quantity:</h6>
+                <input type="number" id="quantityInput" value="1" min="1">
+                <h6>Total Price:</h6>
+                <p id="totalPrice">$199</p>
+          </div>
+          <div class="card-footer modal-footer">
+            <button class="btn text-center" id="mod-btn" onclick="addCart()">Add to Cart</button>
+          </div>
+        </div>
+      
+      </div>
 Coffee with Cashew
 </body>
+<script src="order.js"></script>
 </html>

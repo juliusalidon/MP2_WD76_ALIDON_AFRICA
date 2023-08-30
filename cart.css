@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+}
+.logo{
+    margin: 0;
+    text-align: center;
+    background-color: #ff5353;
+}
+#logo {
+    
+    border: 0;
+    padding: 0;
+    width: 300px;
+    height: 150px;
+    margin-bottom: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    background-color: #ff5353;
+    color: antiquewhite;
+}
+h3{
+    text-align: center; 
+    color: #ff5353; 
+    font-weight: bold;
+}
+.card-header{
+    background-color: #ff5353;
+}
+p{
+    color: antiquewhite;
+}
+h5{
+    color: antiquewhite;
+}
