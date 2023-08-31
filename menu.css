@@ -79,13 +79,18 @@ body{
 }
 
 #menuForm h1{
-    margin-top: 25%;
+    /* margin-top: 25%; */
     /* margin-bottom: 25%; */
     background-color: #ff5353e2;
     font-family: 'Caveat', cursive;
     font-size: 60px;
-    border-radius: 50%;
+    border-radius: 30px;
     font-weight: bolder;
+    height: 100%;
+}
+#h1-pos{
+    top: 25%;
+    position:relative;
 }
 
 .menu-image {
@@ -96,7 +101,8 @@ body{
     width: 200px;
     transition: opacity 0.9s ease-in-out;
     border-radius: 50%;
-    opacity: 0
+    opacity: 0;
+    cursor:pointer;
   }
   
   #menuForm li:hover .menu-image {
