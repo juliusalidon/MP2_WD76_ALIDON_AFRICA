@@ -1,6 +1,5 @@
 body{
     background-color: #ff5353;
-    
 }
 #fluid{
     background-color: #ff5353;
@@ -71,7 +70,7 @@ body{
 
 #menuForm li{
     background-color: rgba(206, 181, 151, 0.615);
-    font-size: 35px;
+    font-size: 27px;
     border-radius: 30px;
     margin: 7px;
     color: rgb(255, 252, 235);
@@ -109,3 +108,10 @@ body{
     display:block;
     opacity: 1;
   }
+  li{
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+  }
+ li:hover{
+    transform: scale(1.1);
+ }

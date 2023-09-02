@@ -1,6 +1,5 @@
 body{
     background-color: #ff5353;
-    
 }
 .logo-div{
      text-align: center; 
@@ -50,7 +49,7 @@ body{
   .slide {
     width: 100%;
     display: none;
-    
+    height: 100vh;
   }
   .icons{
     text-align: center;

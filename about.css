@@ -1,5 +1,5 @@
 body{
-    /* background-color: #ff5353; */
+    background-color: #ff5353;
     
 }
 #fluid{
@@ -53,6 +53,43 @@ body{
     color: antiquewhite;
 }
 
-#contents{
-
+img{
+    height: 400px;
+    width: 350px;
+    margin: 0px;
+    border-radius: 30px;
 }
+
+p{
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff5353;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#contents{
+    background-color: rgba(250, 235, 215, 0.772);
+    padding: 40px;
+    border-radius: 30px;
+}
+
+h1{
+    text-align: center;
+    color: #ff5353;
+    font-size: 65px;
+    font-family: 'Caveat', cursive;
+    font-weight: bolder;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+  
+  
