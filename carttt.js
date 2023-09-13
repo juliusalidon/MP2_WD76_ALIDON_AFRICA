@@ -51,11 +51,11 @@
     let total = 0;
     if (prices) {
       total = calculateTotal(prices);
-      totalPriceContainer.innerHTML = `<span class="total">Total: $${total.toFixed(
+      totalPriceContainer.innerHTML = `<span class="total">Total: ${total.toFixed(
         2
-      )}</span>`;
+      )}php</span>`;
     } else {
-      totalPriceContainer.innerHTML = '<span class="total">Total: $0</span>';
+      totalPriceContainer.innerHTML = '<span class="total">Total: 0php</span>';
     }
   }
 
@@ -96,12 +96,12 @@
 
     const lsContent = getLSContent();
 
-    lsContent.forEach(function(product) {
-      if (product.id === productId) {
-        alert("This course is already in your cart.");
-        isProductInCart = true;
-      }
-    });
+    // lsContent.forEach(function(product) {
+    //   if (product.id === productId) {
+    //     alert("This course is already in your cart.");
+    //     isProductInCart = true;
+    //   }
+    // });
 
     if (!isProductInCart) {
       lsContent.push({
